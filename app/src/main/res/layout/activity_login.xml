@@ -13,18 +13,23 @@
             android:layout_height="50dp"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/edtUserEmail" android:layout_marginTop="200dp"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="32dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="32dp"
-            app:layout_constraintEnd_toEndOf="parent" android:background="@color/colorWhite"
-            android:paddingLeft="20dp" android:hint="E-mail"/>
+            android:id="@+id/edtUserEmail"
+            android:layout_marginTop="200dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/rouded_corner"
+            android:paddingLeft="20dp"
+            android:hint="E-mail"/>
     <EditText
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:inputType="textPassword"
             android:ems="10"
             android:id="@+id/edtUserPassword"
-            android:background="@color/colorWhite"
+            android:background="@drawable/rouded_corner"
             app:layout_constraintStart_toStartOf="@+id/edtUserEmail" app:layout_constraintEnd_toEndOf="@+id/edtUserEmail"
             android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/edtUserEmail" android:hint="Password"
             android:paddingLeft="20dp"/>
@@ -41,7 +46,11 @@
             android:text="Login"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/btnSignIn" app:layout_constraintStart_toStartOf="@+id/edtUserPassword"
-            app:layout_constraintEnd_toEndOf="@+id/edtUserPassword" android:layout_marginTop="8dp"
+            android:id="@+id/btnSignIn"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rounded_button"
+            app:layout_constraintStart_toStartOf="@+id/edtUserPassword"
+            app:layout_constraintEnd_toEndOf="@+id/edtUserPassword"
+            android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/edtUserPassword"/>
 </android.support.constraint.ConstraintLayout>
