@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "869929845373",
+    "firebase_url": "https://kotlinbase-a73b7.firebaseio.com",
+    "project_id": "kotlinbase-a73b7",
+    "storage_bucket": "kotlinbase-a73b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869929845373:android:4d1eb92d287f326e",
+        "android_client_info": {
+          "package_name": "com.devarthur.br"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869929845373-i0a9dltaukdhq3vmr1u1lb1puue4ht6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtwtrilSiOFDyU0PZdAq9PNJU1J4PoDdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869929845373-i0a9dltaukdhq3vmr1u1lb1puue4ht6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
