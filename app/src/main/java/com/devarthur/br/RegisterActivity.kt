@@ -12,9 +12,11 @@ import android.util.Log
 import android.widget.Toast
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.storage.FirebaseStorage
 
 
 import kotlinx.android.synthetic.main.activity_main.* // Kotlin syntetic reference
+import java.util.*
 
 //https://www.youtube.com/watch?v=RYyri2W3Tho&list=PL0dzCUj1L5JE-jiBHjxlmXEkQkum_M3R-&index=2
 
@@ -95,6 +97,15 @@ class RegisterActivity : AppCompatActivity() {
 
     //Sends the image selected from the user to our firebase server
     private fun uploadImageToFirebase(){
+
+        if(selectedPhotoUri == null) return
+
+        val filename = UUID.randomUUID().toString()
+        val ref = FirebaseStorage.getInstance().getReference("/images/$filename")
+
+        ref.putFile(selectedPhotoUri!!).addOnSuccessListener {
+            Log.d("Register", "Successfully uploaded image: ${it.metadata?.path}")
+        }
 
     }
 }
