@@ -24,7 +24,7 @@ class LoginActivity : AppCompatActivity() {
 
 
         btnGobackToLogin.setOnClickListener {
-//            val intent = Intent(this, MainActivity::class.java)
+//            val intent = Intent(this, RegisterActivity::class.java)
 
 
               finish()
